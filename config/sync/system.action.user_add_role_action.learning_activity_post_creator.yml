@@ -1,0 +1,14 @@
+uuid: 7c4e36e7-ddc9-4095-971e-570246ad8922
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.learning_activity_post_creator
+  module:
+    - user
+id: user_add_role_action.learning_activity_post_creator
+label: 'Add the Learning Activity Post creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: learning_activity_post_creator

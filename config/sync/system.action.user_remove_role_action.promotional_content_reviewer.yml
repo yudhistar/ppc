@@ -1,0 +1,14 @@
+uuid: 7efceccf-f5b2-4149-8779-280fe2138188
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.promotional_content_reviewer
+  module:
+    - user
+id: user_remove_role_action.promotional_content_reviewer
+label: 'Remove the Promotional Content reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: promotional_content_reviewer

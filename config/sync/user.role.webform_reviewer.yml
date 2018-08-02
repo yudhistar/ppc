@@ -1,0 +1,17 @@
+uuid: 23fda8fa-c260-494e-8207-58d78b841187
+langcode: en
+status: true
+dependencies: {  }
+id: webform_reviewer
+label: 'Webform reviewer'
+weight: 12
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'delete any webform content'
+  - 'edit any webform content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'view any unpublished content'
+  - 'view latest version'

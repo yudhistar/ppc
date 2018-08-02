@@ -1,0 +1,38 @@
+uuid: a3914ae8-e907-49d0-9de9-dadd99ecd1db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promotion_paragraph.field_promotion_info
+    - field.field.paragraph.promotion_paragraph.field_promotion_video
+    - paragraphs.paragraphs_type.promotion_paragraph
+  module:
+    - text
+    - video
+id: paragraph.promotion_paragraph.default
+targetEntityType: paragraph
+bundle: promotion_paragraph
+mode: default
+content:
+  field_promotion_info:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_promotion_video:
+    weight: 0
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+      preload: auto
+      controls: false
+      loop: false
+      muted: false
+    third_party_settings: {  }
+    type: video_player_list
+    region: content
+hidden: {  }

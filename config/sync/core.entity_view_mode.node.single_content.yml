@@ -1,0 +1,14 @@
+uuid: 8bfb3f58-dc16-4f0d-affc-e8297d36762b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: 'Display mode for showing 1 content per page.'
+id: node.single_content
+label: 'Single Content'
+targetEntityType: node
+cache: true

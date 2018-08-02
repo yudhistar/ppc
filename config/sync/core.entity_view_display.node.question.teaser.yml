@@ -1,0 +1,55 @@
+uuid: e85fcbfc-174c-4851-aa15-94405ea6a659
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.answer_and_critic.default
+    - core.entity_view_mode.node.teaser
+    - field.field.node.question.field_answer
+    - field.field.node.question.field_question
+    - field.field.node.question.field_question_
+    - node.type.question
+  module:
+    - comment
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.question.teaser
+targetEntityType: node
+bundle: question
+mode: teaser
+content:
+  field_answer:
+    type: comment_default
+    weight: 3
+    region: content
+    label: above
+    settings:
+      pager_id: 1
+      view_mode: default
+    third_party_settings: {  }
+  field_question:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  flippy_pager:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_question_: true

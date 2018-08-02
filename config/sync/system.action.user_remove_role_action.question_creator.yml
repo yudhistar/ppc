@@ -1,0 +1,14 @@
+uuid: 28624a5d-ee64-452e-90e6-003c487dfd14
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.question_creator
+  module:
+    - user
+id: user_remove_role_action.question_creator
+label: 'Remove the Question creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: question_creator

@@ -1,0 +1,9 @@
+uuid: ca9c13e0-1231-4389-bb33-f23ba75ad50d
+langcode: en
+status: true
+dependencies: {  }
+id: promotion_paragraph
+label: 'Promotion Paragraph'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

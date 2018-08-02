@@ -1,0 +1,14 @@
+uuid: 57c4636b-f36d-4c21-98a7-e9b73d7dba98
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.promotional_content_creator
+  module:
+    - user
+id: user_add_role_action.promotional_content_creator
+label: 'Add the Promotional Content creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: promotional_content_creator

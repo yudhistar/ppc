@@ -1,0 +1,55 @@
+uuid: 65d70333-f0e4-4657-b727-0d4d9b9f0b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.promotional_content.body
+    - field.field.node.promotional_content.field_featured_video
+    - field.field.node.promotional_content.field_promotion_info
+    - node.type.promotional_content
+  module:
+    - entity_reference_revisions
+    - panelizer
+    - user
+    - video
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.promotional_content.default
+targetEntityType: node
+bundle: promotional_content
+mode: default
+content:
+  field_featured_video:
+    weight: 1
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+      preload: auto
+      controls: false
+      loop: false
+      muted: false
+    third_party_settings: {  }
+    type: video_player_list
+    region: content
+  field_promotion_info:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

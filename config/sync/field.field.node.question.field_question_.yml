@@ -1,0 +1,29 @@
+uuid: 89d047b4-4ebd-476a-922d-8f7c6455a096
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_question_
+    - node.type.question
+    - taxonomy.vocabulary.learning_activity_category
+id: node.question.field_question_
+field_name: field_question_
+entity_type: node
+bundle: question
+label: 'Question Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      learning_activity_category: learning_activity_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

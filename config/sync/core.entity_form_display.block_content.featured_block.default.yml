@@ -1,0 +1,52 @@
+uuid: b7d68004-91ce-4aca-8759-5607ad5ba5d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_block
+    - field.field.block_content.featured_block.field_featured_text
+    - field.field.block_content.featured_block.field_featured_video
+  module:
+    - text
+    - video
+id: block_content.featured_block.default
+targetEntityType: block_content
+bundle: featured_block
+mode: default
+content:
+  field_featured_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_featured_video:
+    weight: 2
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: video_upload
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: 0124d789-24bb-4ef7-ae5e-644128fb8ca9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Display blocks in grid.'
+id: block_content.grid
+label: Grid
+targetEntityType: block_content
+cache: true

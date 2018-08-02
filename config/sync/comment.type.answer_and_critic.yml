@@ -1,0 +1,8 @@
+uuid: eb71329c-d921-4f16-bf8d-587331958385
+langcode: en
+status: true
+dependencies: {  }
+id: answer_and_critic
+label: 'Answer and Critic'
+target_entity_type_id: node
+description: ''

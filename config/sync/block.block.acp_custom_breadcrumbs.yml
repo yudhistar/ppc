@@ -1,0 +1,22 @@
+uuid: 814a33c6-8095-4df2-bdfb-6746d225fe0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acp_custom
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: acp_custom_breadcrumbs
+theme: acp_custom
+region: header
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

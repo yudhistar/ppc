@@ -1,0 +1,37 @@
+schemas:
+  bootstrap: 8000
+  acp_custom: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: profiles/contrib/lightning/favicon.ico
+  url: 'http://local.acp-d8-dev.com/profiles/contrib/lightning/favicon.ico'
+  use_default: 0
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+  node_user_picture: true
+logo:
+  path: 'public://acp-logo-horizontal-4c.png'
+  url: ''
+  use_default: 0
+fluid_container: 1
+table_responsive: '-1'
+table: ''
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  slider: ''
+  breadcrumbs: ''
+  page_title: ''
+  before_content_fw: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  after_content_fw: ''
+  footer_top: ''
+  footer: ''
+  disabled: ''

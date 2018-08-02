@@ -1,0 +1,22 @@
+uuid: a3996fb6-1159-4a66-8680-db50cbc7f2c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.learning_activity_post
+  module:
+    - text
+id: node.learning_activity_post.body
+field_name: body
+entity_type: node
+bundle: learning_activity_post
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

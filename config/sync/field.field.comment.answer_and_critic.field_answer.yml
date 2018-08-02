@@ -1,0 +1,21 @@
+uuid: b6ac7638-e277-4380-8a3e-63f7bfd5c524
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer_and_critic
+    - field.storage.comment.field_answer
+  module:
+    - text
+id: comment.answer_and_critic.field_answer
+field_name: field_answer
+entity_type: comment
+bundle: answer_and_critic
+label: Answer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

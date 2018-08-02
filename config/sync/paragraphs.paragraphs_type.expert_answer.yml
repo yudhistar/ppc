@@ -1,0 +1,9 @@
+uuid: f61c7a9c-97c1-495d-96d3-0e0c8b0a2883
+langcode: en
+status: true
+dependencies: {  }
+id: expert_answer
+label: 'Expert Answer'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

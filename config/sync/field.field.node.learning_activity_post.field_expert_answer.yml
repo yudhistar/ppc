@@ -1,0 +1,37 @@
+uuid: b01e0f99-a067-4d9b-a6e1-9f068faad9fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expert_answer
+    - node.type.learning_activity_post
+    - paragraphs.paragraphs_type.expert_answer
+  module:
+    - entity_reference_revisions
+id: node.learning_activity_post.field_expert_answer
+field_name: field_expert_answer
+entity_type: node
+bundle: learning_activity_post
+label: 'Expert Answer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      expert_answer: expert_answer
+    target_bundles_drag_drop:
+      demo:
+        weight: 4
+        enabled: false
+      expert_answer:
+        enabled: true
+        weight: 5
+      promotion_paragraph:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

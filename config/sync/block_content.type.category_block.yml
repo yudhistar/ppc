@@ -1,0 +1,8 @@
+uuid: 1c5dbd28-a749-43f7-9e1f-7865bc55dda6
+langcode: en
+status: true
+dependencies: {  }
+id: category_block
+label: 'Category Block'
+revision: 1
+description: 'Block for showing Category tile.'

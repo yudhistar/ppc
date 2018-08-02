@@ -1,0 +1,44 @@
+uuid: 7bdd6b9b-24ea-473d-b043-adfe89f6acfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.expert_answer.field_image
+    - field.field.paragraph.expert_answer.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.expert_answer
+  module:
+    - content_moderation
+    - image
+    - text
+id: paragraph.expert_answer.default
+targetEntityType: paragraph
+bundle: expert_answer
+mode: default
+content:
+  field_image:
+    weight: 101
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
+    weight: 102
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

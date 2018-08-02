@@ -1,0 +1,21 @@
+uuid: d3853444-9cb0-4c0a-b6a8-9737984e1e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.expert_answer
+  module:
+    - text
+id: paragraph.expert_answer.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: expert_answer
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,33 @@
+uuid: 44db0f75-957a-4748-8ceb-1d7ef6f1dc9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.expert_answer.field_image
+    - field.field.paragraph.expert_answer.field_text
+    - paragraphs.paragraphs_type.expert_answer
+  module:
+    - image
+    - text
+id: paragraph.expert_answer.default
+targetEntityType: paragraph
+bundle: expert_answer
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

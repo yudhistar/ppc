@@ -1,0 +1,54 @@
+uuid: db0911fe-0f34-4d4f-94dd-f471df867f38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.learning_activity_post.field_activity_question
+    - field.field.node.learning_activity_post.field_category
+    - field.field.node.learning_activity_post.field_expert_answer
+    - field.field.node.learning_activity_post.field_patient_answer
+    - node.type.learning_activity_post
+  module:
+    - panelizer
+    - text
+    - user
+    - webform
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.learning_activity_post.default
+targetEntityType: node
+bundle: learning_activity_post
+mode: default
+content:
+  field_activity_question:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_patient_answer:
+    weight: 3
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  flippy_pager:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_category: true
+  field_expert_answer: true

@@ -1,0 +1,28 @@
+uuid: 8f040d97-03e5-40ef-9bd5-8bccb164a90d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - display_answer
+  theme:
+    - acp_custom
+id: displayanswerblock
+theme: acp_custom
+region: content
+weight: -2
+provider: null
+plugin: display_answer_block
+settings:
+  id: display_answer_block
+  label: 'Display Answer Block'
+  provider: display_answer
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      learning_activity_post: learning_activity_post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,9 @@
+uuid: 6c72e105-acc5-4fa5-a216-d989f1c315ef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Learning Activity Category'
+vid: learning_activity_category
+description: 'Vocabulary of Learning Activity Categories to be used for "Online Learning Activity" content.'
+hierarchy: 0
+weight: 0

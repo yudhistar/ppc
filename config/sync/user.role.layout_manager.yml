@@ -1,0 +1,19 @@
+uuid: 34a6b2ed-5d76-4bbc-88d1-7da91d6aa6c0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O15STNqaxZJp9WQvMNCRYzhPnpaMVU0W8eVoijQd3rw
+id: layout_manager
+label: 'Layout manager'
+weight: 2
+is_admin: false
+permissions:
+  - 'administer node display'
+  - 'administer panelizer'
+  - 'administer panelizer node landing_page defaults'
+  - 'administer panelizer node learning_activity_post defaults'
+  - 'administer panelizer node page defaults'
+  - 'administer panelizer node promotional_content defaults'
+  - 'administer panelizer node question defaults'
+  - 'administer panelizer node webform defaults'

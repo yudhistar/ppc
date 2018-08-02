@@ -1,0 +1,17 @@
+uuid: f84d8011-2da2-479c-92bb-789db978da5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Learning Activity Post'
+type: learning_activity_post
+description: 'A post containing online learning activity content having a learning activity category.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

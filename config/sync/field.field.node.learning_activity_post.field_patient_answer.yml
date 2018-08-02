@@ -1,0 +1,36 @@
+uuid: ebcd5629-e2f1-49da-9b62-e8c326d1a5f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_patient_answer
+    - node.type.learning_activity_post
+    - webform.webform.answer_text
+  module:
+    - webform
+id: node.learning_activity_post.field_patient_answer
+field_name: field_patient_answer
+entity_type: node
+bundle: learning_activity_post
+label: Answer
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: e2a1be36-1331-4c9b-b6ba-8b06b5ee5045
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

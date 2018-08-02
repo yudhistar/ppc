@@ -1,0 +1,38 @@
+uuid: e829ca9c-958c-4f45-b510-2f571b4a8d3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_block
+    - field.field.block_content.featured_block.field_featured_text
+    - field.field.block_content.featured_block.field_featured_video
+  module:
+    - text
+    - video
+id: block_content.featured_block.default
+targetEntityType: block_content
+bundle: featured_block
+mode: default
+content:
+  field_featured_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_featured_video:
+    weight: 1
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+      loop: true
+      preload: auto
+      controls: false
+      muted: false
+    third_party_settings: {  }
+    type: video_player_list
+    region: content
+hidden: {  }

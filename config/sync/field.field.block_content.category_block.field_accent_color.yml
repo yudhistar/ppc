@@ -1,0 +1,23 @@
+uuid: fa0c9e4d-5c74-4187-b2d0-176d5e8ec386
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.category_block
+    - field.storage.block_content.field_accent_color
+  module:
+    - jquery_colorpicker
+id: block_content.category_block.field_accent_color
+field_name: field_accent_color
+entity_type: block_content
+bundle: category_block
+label: 'Accent Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: FFFFFF
+default_value_callback: ''
+settings: {  }
+field_type: jquery_colorpicker

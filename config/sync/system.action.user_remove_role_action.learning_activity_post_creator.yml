@@ -1,0 +1,14 @@
+uuid: 62365fcb-3f8a-43c0-8b9e-9fed79c3bba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.learning_activity_post_creator
+  module:
+    - user
+id: user_remove_role_action.learning_activity_post_creator
+label: 'Remove the Learning Activity Post creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: learning_activity_post_creator

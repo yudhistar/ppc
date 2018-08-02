@@ -1,0 +1,26 @@
+uuid: 64a83da6-c9ef-4f9a-b614-6d77d5988d50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_promotion_video
+    - paragraphs.paragraphs_type.promotion_paragraph
+  module:
+    - video
+id: paragraph.promotion_paragraph.field_promotion_video
+field_name: field_promotion_video
+entity_type: paragraph
+bundle: promotion_paragraph
+label: 'Promotion Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

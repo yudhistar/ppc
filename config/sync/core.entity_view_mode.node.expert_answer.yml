@@ -1,0 +1,14 @@
+uuid: 6b613fd8-b9c8-4a40-8549-901fa67df593
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.expert_answer
+label: 'Expert Answer'
+targetEntityType: node
+cache: true

@@ -1,0 +1,14 @@
+uuid: 348b6786-34d2-4651-aea1-7940ce968233
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.promotional_content_creator
+  module:
+    - user
+id: user_remove_role_action.promotional_content_creator
+label: 'Remove the Promotional Content creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: promotional_content_creator

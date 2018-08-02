@@ -1,0 +1,30 @@
+uuid: e1f7f56c-64a3-428b-9af1-002ec2c33778
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.category_block_view
+  module:
+    - system
+    - views
+  theme:
+    - acp_custom
+id: views_block__category_block_view_block_cat_menu
+theme: acp_custom
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:category_block_view-block_cat_menu'
+settings:
+  id: 'views_block:category_block_view-block_cat_menu'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '10'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/test\r\n/cme-moc/online-learning-center"
+    negate: false
+    context_mapping: {  }

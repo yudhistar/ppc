@@ -1,0 +1,21 @@
+uuid: 20583977-63d9-4a5a-8595-f8303233d305
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_question
+    - node.type.learning_activity_post
+  module:
+    - text
+id: node.learning_activity_post.field_activity_question
+field_name: field_activity_question
+entity_type: node
+bundle: learning_activity_post
+label: Question
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

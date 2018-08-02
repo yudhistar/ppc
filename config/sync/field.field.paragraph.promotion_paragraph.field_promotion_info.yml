@@ -1,0 +1,21 @@
+uuid: 3451dec8-401b-4d1e-90a2-a6dd873d4be9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_promotion_info
+    - paragraphs.paragraphs_type.promotion_paragraph
+  module:
+    - text
+id: paragraph.promotion_paragraph.field_promotion_info
+field_name: field_promotion_info
+entity_type: paragraph
+bundle: promotion_paragraph
+label: 'Promotion Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

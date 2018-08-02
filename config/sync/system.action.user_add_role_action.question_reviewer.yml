@@ -1,0 +1,14 @@
+uuid: 65c7d1c5-3703-4dd6-9cf9-3a6c289c10df
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.question_reviewer
+  module:
+    - user
+id: user_add_role_action.question_reviewer
+label: 'Add the Question reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: question_reviewer

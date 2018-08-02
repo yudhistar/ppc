@@ -1,0 +1,17 @@
+uuid: ab3a4cdd-0eac-4fdb-bb65-990b114b0796
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Promotional Content'
+type: promotional_content
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

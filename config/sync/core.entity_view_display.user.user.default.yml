@@ -1,0 +1,36 @@
+uuid: 8d83bb2a-ff49-4e80-92ef-c72e9ab52bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_profile_picture
+  module:
+    - image
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_profile_picture:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  member_for:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

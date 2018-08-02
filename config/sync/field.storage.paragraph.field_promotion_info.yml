@@ -1,0 +1,19 @@
+uuid: 0ed54eb0-7620-4173-9626-c83f9b9d9383
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_promotion_info
+field_name: field_promotion_info
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

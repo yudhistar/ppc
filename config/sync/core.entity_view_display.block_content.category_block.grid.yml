@@ -1,0 +1,48 @@
+uuid: 99a46ec5-7cd2-423c-af9c-d8bae0ed23c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.category_block
+    - core.entity_view_mode.block_content.grid
+    - field.field.block_content.category_block.field_accent_color
+    - field.field.block_content.category_block.field_category_icon
+    - field.field.block_content.category_block.field_link_to_content
+    - image.style.thumbnail
+  module:
+    - image
+    - jquery_colorpicker
+    - link
+id: block_content.category_block.grid
+targetEntityType: block_content
+bundle: category_block
+mode: grid
+content:
+  field_accent_color:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: jquery_colorpicker_raw_hex_display
+    region: content
+  field_category_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_link_to_content:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 23303fca-ff89-488e-b7cc-d178c686a43b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acp_custom
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: acp_custom_powered
+theme: acp_custom
+region: disabled
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

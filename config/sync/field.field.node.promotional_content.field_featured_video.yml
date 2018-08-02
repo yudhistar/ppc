@@ -1,0 +1,26 @@
+uuid: 9a26bf55-3c6d-4c12-9c62-9555ab290f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_video
+    - node.type.promotional_content
+  module:
+    - video
+id: node.promotional_content.field_featured_video
+field_name: field_featured_video
+entity_type: node
+bundle: promotional_content
+label: 'Featured Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

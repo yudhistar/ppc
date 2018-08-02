@@ -1,0 +1,28 @@
+uuid: 8868d9b0-bac1-4695-9f79-7ced12e23301
+langcode: en
+status: true
+dependencies: {  }
+id: promotional_content_creator
+label: 'Promotional Content creator'
+weight: 13
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node promotional_content content'
+  - 'administer panelizer node promotional_content layout'
+  - 'change layouts in place editing'
+  - 'create promotional_content content'
+  - 'create url aliases'
+  - 'edit own promotional_content content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view promotional_content revisions'

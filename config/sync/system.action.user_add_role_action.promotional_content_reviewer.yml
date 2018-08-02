@@ -1,0 +1,14 @@
+uuid: 1f56c6e6-139b-4afc-86e6-11c7ae2ce1cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.promotional_content_reviewer
+  module:
+    - user
+id: user_add_role_action.promotional_content_reviewer
+label: 'Add the Promotional Content reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: promotional_content_reviewer

@@ -1,0 +1,45 @@
+uuid: db9c378f-b212-4bec-8fd9-cc6d5c894229
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.expert_answer
+    - field.field.node.learning_activity_post.field_activity_question
+    - field.field.node.learning_activity_post.field_category
+    - field.field.node.learning_activity_post.field_expert_answer
+    - field.field.node.learning_activity_post.field_patient_answer
+    - node.type.learning_activity_post
+  module:
+    - entity_reference_revisions
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.learning_activity_post.expert_answer
+targetEntityType: node
+bundle: learning_activity_post
+mode: expert_answer
+content:
+  field_expert_answer:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  flippy_pager:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_activity_question: true
+  field_category: true
+  field_patient_answer: true
+  links: true

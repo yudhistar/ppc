@@ -1,0 +1,22 @@
+uuid: 5811a22f-04b4-4fae-80aa-7e09a5012902
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - acp_custom
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: acp_custom_help
+theme: acp_custom
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

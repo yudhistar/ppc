@@ -1,0 +1,31 @@
+uuid: 3fe5338b-0eaa-4550-a5fa-887a66a4d49d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:featured_block:bf103248-40c9-4ee2-a157-60fe6126e127'
+  module:
+    - block_content
+    - system
+  theme:
+    - acp_custom
+id: onlinelearningactivity
+theme: acp_custom
+region: before_content_fw
+weight: 0
+provider: null
+plugin: 'block_content:bf103248-40c9-4ee2-a157-60fe6126e127'
+settings:
+  id: 'block_content:bf103248-40c9-4ee2-a157-60fe6126e127'
+  label: 'Online Learning Activity'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,14 @@
+uuid: 3fd0ee7e-3c90-4ae2-afa1-1e5c24e35949
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.learning_activity_post_reviewer
+  module:
+    - user
+id: user_add_role_action.learning_activity_post_reviewer
+label: 'Add the Learning Activity Post reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: learning_activity_post_reviewer

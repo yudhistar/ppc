@@ -1,0 +1,8 @@
+uuid: 25ca2cc0-82cc-483b-a15a-7a859e6d742c
+langcode: en
+status: true
+dependencies: {  }
+id: featured_block
+label: 'Featured Block'
+revision: 1
+description: 'Featured two column block for landing pages with text and video content'

@@ -1,0 +1,9 @@
+uuid: 5a1644dc-5337-4dbf-9c26-c459eca83a96
+langcode: en
+status: true
+dependencies: {  }
+id: demo
+label: Demo
+icon_uuid: null
+description: 'Paragraph type for demonstration.'
+behavior_plugins: {  }

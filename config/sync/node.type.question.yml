@@ -1,0 +1,17 @@
+uuid: 4d3fa0eb-1f17-440c-8bac-d23d9898db85
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Question
+type: question
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

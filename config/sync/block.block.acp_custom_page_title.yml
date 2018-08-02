@@ -1,0 +1,20 @@
+uuid: a55990f6-d1ea-4e2c-b77c-6452a0ccda3f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acp_custom
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: acp_custom_page_title
+theme: acp_custom
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

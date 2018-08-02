@@ -1,0 +1,14 @@
+uuid: b72ec459-baf4-4f51-adaf-6ec778bc1f59
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - taxonomy
+third_party_settings:
+  lightning_core:
+    description: 'Display mode for main listing page having grid layout.'
+id: taxonomy_term.grid_main_listing
+label: 'Grid - Main Listing'
+targetEntityType: taxonomy_term
+cache: true

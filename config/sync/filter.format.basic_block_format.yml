@@ -1,0 +1,22 @@
+uuid: 61f1b51d-88d9-4adb-b4f1-a051e3657563
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_wysiwyg
+name: 'Basic Block Format'
+format: basic_block_format
+weight: 0
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  video_embed_wysiwyg:
+    id: video_embed_wysiwyg
+    provider: video_embed_wysiwyg
+    status: true
+    weight: 0
+    settings: {  }

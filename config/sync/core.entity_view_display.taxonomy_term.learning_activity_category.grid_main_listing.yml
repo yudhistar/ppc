@@ -1,0 +1,42 @@
+uuid: 358b2f11-78e7-4415-9060-c61820b5d6b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.grid_main_listing
+    - field.field.taxonomy_term.learning_activity_category.field_color
+    - field.field.taxonomy_term.learning_activity_category.field_featured_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.learning_activity_category
+  module:
+    - image
+    - panelizer
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: taxonomy_term.learning_activity_category.grid_main_listing
+targetEntityType: taxonomy_term
+bundle: learning_activity_category
+mode: grid_main_listing
+content:
+  field_color:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+    third_party_settings: {  }
+    type: image_url
+    region: content
+hidden:
+  description: true

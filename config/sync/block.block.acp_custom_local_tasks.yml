@@ -1,0 +1,22 @@
+uuid: 84a658b4-57f8-4e16-8968-28432ab30c9d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acp_custom
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: acp_custom_local_tasks
+theme: acp_custom
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

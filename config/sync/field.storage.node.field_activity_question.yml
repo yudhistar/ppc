@@ -1,0 +1,19 @@
+uuid: 482c925f-8674-4c3f-939d-9c77c55158c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_activity_question
+field_name: field_activity_question
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

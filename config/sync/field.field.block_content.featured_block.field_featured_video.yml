@@ -1,0 +1,26 @@
+uuid: 3fe7dd9d-89da-4de6-9594-701e5a9710db
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_block
+    - field.storage.block_content.field_featured_video
+  module:
+    - video
+id: block_content.featured_block.field_featured_video
+field_name: field_featured_video
+entity_type: block_content
+bundle: featured_block
+label: 'Featured Video'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

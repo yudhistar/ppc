@@ -1,0 +1,22 @@
+uuid: f00c535f-e5d6-4ed5-9bc4-7c67a603b6bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.promotional_content
+  module:
+    - text
+id: node.promotional_content.body
+field_name: body
+entity_type: node
+bundle: promotional_content
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

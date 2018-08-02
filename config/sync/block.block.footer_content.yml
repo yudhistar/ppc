@@ -1,0 +1,25 @@
+uuid: 34a3e878-c07d-4266-a995-5f1b1d0f4968
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:15534e8c-a152-4ad0-9b0d-a2289f3cbfa0'
+  module:
+    - block_content
+  theme:
+    - acp_custom
+id: footer_content
+theme: acp_custom
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:15534e8c-a152-4ad0-9b0d-a2289f3cbfa0'
+settings:
+  id: 'block_content:15534e8c-a152-4ad0-9b0d-a2289f3cbfa0'
+  label: 'Footer Content'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

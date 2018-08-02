@@ -1,0 +1,14 @@
+uuid: 5b2abf96-ede9-41b5-85f3-0e414dc5ac1f
+name: ACP
+mail: more89aniket@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/30
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

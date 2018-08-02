@@ -1,0 +1,25 @@
+uuid: a8ff7cb5-075d-4f10-9ccc-37a527317d68
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer_and_critic
+    - field.field.comment.answer_and_critic.field_answer
+  module:
+    - text
+id: comment.answer_and_critic.default
+targetEntityType: comment
+bundle: answer_and_critic
+mode: default
+content:
+  field_answer:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

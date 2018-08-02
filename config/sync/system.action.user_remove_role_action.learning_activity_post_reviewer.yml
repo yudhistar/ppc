@@ -1,0 +1,14 @@
+uuid: 63b6af57-e819-417a-bd5e-8b5f452bc704
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.learning_activity_post_reviewer
+  module:
+    - user
+id: user_remove_role_action.learning_activity_post_reviewer
+label: 'Remove the Learning Activity Post reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: learning_activity_post_reviewer

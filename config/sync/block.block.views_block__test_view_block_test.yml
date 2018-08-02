@@ -1,0 +1,30 @@
+uuid: a5ecd524-fef8-4568-bd19-e9ba59d0f147
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.test_view
+  module:
+    - system
+    - views
+  theme:
+    - acp_custom
+id: views_block__test_view_block_test
+theme: acp_custom
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:test_view-block_test'
+settings:
+  id: 'views_block:test_view-block_test'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /test
+    negate: false
+    context_mapping: {  }
