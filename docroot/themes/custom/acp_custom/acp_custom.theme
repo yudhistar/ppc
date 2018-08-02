@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function acp_custom_theme_suggestions_page_alter(array &$suggestions, array $variables)
+{
+
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
+  
+    $is_front = \Drupal::service('path.matcher')->isFrontPage();
+    //kint($is_front);die;
+    if ($is_front == TRUE) {
+    $suggestions[] = 'page__front';
+  }
+}
+
+function acp_custom_theme_suggestions_page_title_alter(array &$suggestions, array $variables){
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
+  
+  if($is_front){
+    $suggestions[] = 'page_title__front';
+  }
+}
+
+/**
+ * Implements template_preprocess_page().
+ */
+function acp_custom_preprocess_page(&$variables)
+{
+  global $base_root;
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  $variables['theme_path'] = drupal_get_path('theme', $theme);
+  $variables['base_path'] = base_path();
+
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}
+
+/**
+ * Implements template_preprocess_block().
+ */
+function acp_custom_preprocess_block(&$variables)
+{
+  if ($variables['plugin_id'] == "views_block:expert_answer_-block_1") {
+    $variables['#cache']['max-age'] = 0;
+  }
+
+  $block_id = $variables['elements']['#id'];
+  if ($block_id == 'category1') {
+    $block = Drupal\block\Entity\Block::load($block_id);
+    $uuid = $block->getPlugin()->getDerivativeId();
+    $block_content = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $uuid);
+    if ($block_content) {
+      $block_type = $block_content->get('type')->getValue()[0]['target_id'];
+      if ($block_type == 'category_block') {
+        // Category Title.
+        $field_title = $block_content->label();
+
+        // Category color-code.
+        $field_color_value = $block_content->field_accent_color->value;
+
+        // Category icon path.
+        $field_icon_file = $block_content->get('field_category_icon')->getValue()[0]['target_id'];
+
+        $load_icon_file = \Drupal\file\Entity\File::load($field_icon_file);
+        $icon_path = file_url_transform_relative(file_create_url($load_icon_file->getFileUri()));
+        $variables['category_title'] = $field_title;
+        $variables['category_color_code'] = $field_color_value;
+        $variables['category_icon'] = $icon_path;
+
+      }
+    }
+
+  }
+
+}
+
+/**
+ * Implements hook_theme_suggestions_block_alter().
+ */
+
+function acp_custom_theme_suggestions_block_alter(array &$suggestions, array $variables)
+{
+  $elements = $variables['elements'];
+
+  if (isset($elements['content']['#block_content'])) {
+    $bundle = $elements['content']['#block_content']->bundle();
+    $view_mode = $elements['content']['#view_mode'];
+    //kint($elements['content']);die;
+    if ($bundle == 'category_block') {
+      $suggestions[] = 'block__' . $bundle . '__' . $view_mode;
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+name: Display Answer Block
+description: Answer Block for Question Content Type
+core: 8.x
+package: Custom
+dependencies:
+- node
+- block
+type: module

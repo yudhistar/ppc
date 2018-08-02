@@ -1,0 +1,277 @@
+/**
+ * Place your custom styles here.
+ */
+
+/* Header */
+.navbar-header{
+  float: none;
+}
+
+header.navbar{
+  margin-bottom: 0px !important;
+}
+.navbar-default{
+  background-color: #ffffff;
+}
+
+.header-menu{
+  background-color: #575a5d;
+}
+
+ul.menu.menu--main.nav.navbar-nav li a {
+  color: #ededed;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #424647;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ededed;
+}
+/* END Header */
+
+/* Footer */
+footer.footer.container-fluid {
+  background: #f5f5f5;
+}
+/* Footer End */
+
+/* Online learning activities category-listing */
+/*.category-wrapper-grid .category-thumbnail-grid {
+  background: #663399;
+}*/
+.learning-category .views-row:first-child .category-wrapper-grid .category-thumbnail-grid {
+    background: #00a0df;
+}
+
+.learning-category .views-row:nth-child(2) .category-wrapper-grid .category-thumbnail-grid {
+    background: #8fd400;
+}
+
+.learning-category .views-row:nth-child(3) .category-wrapper-grid .category-thumbnail-grid {
+    background: #46cbff;
+}
+
+.category-thumbnail-grid img {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.category-wrapper-grid {
+  border: 1px solid #eee;
+}
+
+.category-title-grid {
+  text-align: center;
+  min-height: 100px;
+  display: table;
+  width: 100%;
+}
+
+.category-title-grid h5 {
+  color: #00a0df;
+  display:  table-cell;
+  vertical-align:  middle;
+  justify-content:  center;
+}
+
+section#block-footer-content .field--name-body p {
+    text-align:  center;
+    font-size: 12px;
+    color: #575a5d;
+}
+
+/* Updated CSS */
+.category-image {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.category-wrapper {
+    border:  1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.category-link-title {
+    padding: 30px 0px;
+    text-align:  center;
+}
+
+.category-image-wrapper {
+    padding: 20px 0px;
+}
+/* End - Updated CSS */
+
+/* End - Online learning activities category-listing */
+/* Featured Video-Text block - Home Page */
+.field--name-field-featured-video video[style] {
+width: 100% !important;
+height: 100% !important;
+}
+/* END - Featured Video-Text block - Home Page */
+
+/* Question Page*/
+.field--name-field-activity-question .field--label {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.answer-title span {
+  font-size:  25px;
+  font-weight: normal;
+}
+
+.answer-title {
+  margin-top: 10px;
+  border-top: 2px solid #e5e5e5;
+  padding-top: 20px;
+}
+
+.user-answer {
+  margin-top: 25px;
+}
+
+.field--name-field-expert-answer .field--label {
+  font-size: 25px;
+  font-weight: normal;
+  padding-top: 20px;
+  border-top: 2px solid #e5e5e5;
+}
+
+section#block-views-block-expert-answer-block-1 {
+  margin-top: 20px;
+}
+
+.field--name-field-expert-answer .field--item {
+  margin-top: 20px;
+}
+/* END Question Page */
+
+span.company-title-link {
+  color: #00a0df;
+}
+/* Flippy Links - Next-Prev */
+ul.flippy li a {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+.learning-flippy-links{
+  margin-top: 20px;
+}
+/* END Flippy */
+
+.learning-activity-node-title {
+  display: none;
+}
+
+.user-block-wrapper {
+    display:  table;
+    width: 100%;
+    background: #eee;
+    border-radius: 10px;
+}
+
+.user-block-wrapper > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.user-block-uname {
+    width: 50%;
+}
+
+/* Basic Links */
+
+section#block-links {
+    background: #eee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Basic Links - END*/
+
+/* WYSIWYG table */
+table.tbl-border tr td, table.tbl-border thead tr th {
+    border: 1px solid;
+    padding: 10px;
+}
+table.tbl-padding tr th, table.tbl-padding tr td {
+    padding: 10px;
+}
+/* WYSIWYG table */
+
+/* Featured block CSS */
+section#block-onlinelearningactivity {
+    background-color: #424647;
+}
+
+.col-xs-12.col-md-6.featured-text-block {
+    color: #ffff;
+    border-top: 5px solid #21a9de;
+}
+
+section#block-onlinelearningactivity .field--name-field-featured-text {
+    color: #d0d0d0;
+}
+/* END - Featured block CSS*/
+
+/* Front page title */
+.front-page-title {
+    color:  #008466;
+    margin-top: 30px;
+}
+
+.front-page-title h1:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    left: 45%;
+    border-bottom: 3px solid #FFC600;
+}
+
+.front-page-title h1 {
+    position:  relative;
+    padding-bottom: 15px;
+}
+/* END - Front page title*/
+
+/* ========== Media Queries ========== */
+@media screen and (min-width: 768px){
+  html{
+    height: 100%;
+  }
+
+  body {
+    margin: 0px;
+    min-height:100%;
+  }
+
+section.activity-page-content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+}
+
+@media screen and (max-width: 991px){
+  .featured-video-block {
+    margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 990px) and (min-width: 400px)  {
+
+}
+
+/* End - Media Queries*/

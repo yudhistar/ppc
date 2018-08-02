@@ -1,0 +1,30 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'ACP Custom Theme'
+description: 'Uses the jsDelivr CDN for all CSS and JavaScript. No source files or compiling is necessary and is recommended for simple sites or beginners.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation Header'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  slider: 'Featured Slider'
+  breadcrumbs: 'Breadcrumbs'
+  page_title: 'Page Title'
+  before_content_fw: 'Before Content Fullwidth'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  after_content_fw: 'After Content Fullwidth'
+  footer_top: 'Footer Top'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  disabled: 'Disabled'
+
+libraries:
+  - 'acp_custom/global-styling'

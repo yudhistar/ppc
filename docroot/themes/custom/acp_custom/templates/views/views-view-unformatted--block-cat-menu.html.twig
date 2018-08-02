@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="learning-category-grid col-xs-12">
+    {% for row in rows %}
+        {%
+      set row_classes = [
+        default_row_class ? 'views-row col-md-4 col-sm-6 col-xs-12',
+      ]
+    %}
+        {% set color %}
+        {{ row.content.field_accent_color }}
+        {% endset %}
+        {% set category_icon %}
+        {{ row.content.field_category_icon }}
+        {% endset %}
+        {% set content_link %}
+        {{ row.content.field_link_to_content }}
+        {% endset %}
+        <div{{ row.attributes.addClass(row_classes) }}>
+            <div class="category-wrapper">
+                <div class="category-image-wrapper" style="background: #{{ color|striptags|trim }};">
+                    <div class="category-image" style="background: url('{{ category_icon|striptags|trim }}') no-repeat;"></div>
+                </div>
+                <div class="category-link-title">
+                    <a href="{{ content_link|striptags|trim }}">{{ row['content']['#block_content'].label() }}</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<!-- End learning-category -->
